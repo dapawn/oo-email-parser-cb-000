@@ -10,6 +10,6 @@ def initialize(emails)
 end
 
   def parse
-    @emails.gsub(/,/,"").split(" ")
+    @emails.gsub(/,/,"").split(" ").uniq
   end
 end
